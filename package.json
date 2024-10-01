@@ -1,0 +1,43 @@
+{
+  "name": "modern-node-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:papercoding22/modern-node-template.git",
+  "author": "papercoding22 <john.ly997@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf build && tsc",
+    "start": "npm run build && node build/index.js",
+    "dev": "tsx watch src/index.ts",
+    "dev:debug": "tsx watch --inspect src/index.ts",
+    "lint": "eslint 'src/**/*.{js,ts}'",
+    "lint:fix": "eslint 'src/**/*.{js,ts}' --fix",
+    "prettier": "prettier --check 'src/**/*.{js,ts}'",
+    "prettier:fix": "prettier --write 'src/**/*.{js,ts}'",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.10.0",
+    "@types/node": "^22.5.5",
+    "@typescript-eslint/eslint-plugin": "^8.5.0",
+    "@typescript-eslint/parser": "^8.5.0",
+    "eslint": "^9.10.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.9.0",
+    "husky": "^9.1.6",
+    "prettier": "^3.3.3",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.5.0",
+    "vitest": "^2.1.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
+  }
+}
