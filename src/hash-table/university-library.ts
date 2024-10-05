@@ -15,6 +15,30 @@ class Librarian {
   }
 }
 
+/**
+ * @author: Paper Coding
+ * @description:
+ * University Library Analogy:
+ * - Hash Table is like the university library with shelves
+ * - Hash Function is like the librarian who assigns books to shelves
+ * - and help you find books quickly based on the title (key)
+ * - Dynamic Resizing is like buying new shelves when the library is full
+ * - and removing shelves when they are empty
+ * - Time complexity of finding a book is O(1) on average
+ * - Time complexity of adding a book is O(1) on average
+ * - Time complexity of removing a book is O(1) on average
+ * - Time complexity of reorganizing the library is O(n) on average
+ * - where n is the number of books in the library
+ * - Space complexity is O(n) where n is the number of books in the library
+ * - because each book is stored in the hash table
+ * - and each shelf can store multiple books
+ * - and the number of shelves grows with the number of books
+ * - and shrinks when the shelves are empty
+ * - Why does librarian should buy new shelves when the shelf is full?
+ * - Because the library is full and there is no space to store new books
+ * - Why does librarian should remove shelves when they are empty?
+ * - Because the shelves are empty and there is no need to keep them
+ */
 // Library (hash table) with dynamic resizing of shelves
 class UniversityLibrary {
   private shelves: Map<number, Book[]> = new Map(); // Hash table (shelves)
