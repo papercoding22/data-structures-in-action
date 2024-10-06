@@ -48,5 +48,7 @@ describe('FunctionComponent', () => {
     const children = React.getChildren();
 
     expect(children.props).toEqual({ name: 'Bob' });
+    // but the count should remain the same
+    expect(children.data).toEqual({ count: 1 });
   });
 });

@@ -28,6 +28,7 @@ class React {
   render(element: Element) {
     this.component = element;
     this.children = element.fn(element.props);
+    this.resetCallCount();
     return this.children;
   }
 
