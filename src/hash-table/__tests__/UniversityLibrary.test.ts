@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 
-import UniversityLibrary from '../university-library';
+import UniversityLibrary from '../UniversityLibrary';
 
 describe('UniversityLibrary', () => {
   it('should add a book to the library', () => {

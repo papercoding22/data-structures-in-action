@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 
-import UserDatabase from '../user-database';
+import UserDatabase from '../UserDatabase';
 
 describe('UserDatabase', () => {
   it('should add a user to the database', () => {
